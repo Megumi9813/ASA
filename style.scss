@@ -6,11 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-}
-
-.page {
-    padding: 2rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 a {
@@ -26,6 +22,10 @@ a {
 .gold {
     color: rgb(153, 108, 83);
     text-decoration: underline;
+}
+
+.brown {
+    background-color: rgb(246, 246, 246);
 }
 
 .button_gold {
@@ -47,141 +47,53 @@ a {
 }
 
 header {
-    .home_logo {
-        width: 375px;
-        margin: 0 auto;
-        padding-top: 24px;
-        a {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
+    .header_up {
+        height: 32px;
     }
-    nav {
-        padding: 24px 0;
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            max-width: 900px;
+    .header_container {
+        .home_logo {
+            width: 375px;
             margin: 0 auto;
-            li {
-                font-size: 14px;
-                a {
-                    text-decoration: none;
-                    padding: 6px;
-                    color: rgb(94, 94, 94);
-                }
-                .home_link {
-                    color: rgb(153, 108, 83);
-                    font-weight: 700;
+            padding-top: 24px;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
                 }
             }
         }
-    }
-}
-
-.home_img_cover {
-    margin: 32px -2rem 0 -2rem;
-    .home_img {
-        background-image: url(./img/home_img.webp);
-        width: 100%;
-        min-height: 60vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-}
-
-section {
-    padding: 56px 0;
-    .company_summary {
-        max-width: calc(60%);
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        text-align: center;
-        .summary_title {
-            font-weight: 400;
-            font-size: 22px;
-            margin-bottom: 24px;
-            color: #1B1B1B;
-        }
-        .summary_description {
-            font-size: 18px;
-            color: rgb(94, 94, 94);
-            margin-bottom: 24px;
-            font-weight: 400;
-        }
-    }
-    .advantage_title {
-        width: 100%;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 auto;
-        max-width: 1100px;
-        margin-bottom: 40px;
-        span {
-            color: rgb(186, 138, 110);
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            font-weight: 400;
-            position: relative;
-            display: inline-block;
-        }
-        span:before {
-            display: block;
-            width: 100vw;
-            position: absolute;
-            background: currentColor;
-            height: 1px;
-            content: "";
-            margin-right: 24px;
-            right: 100%;
-            top: 20px;
-        }
-        span:after {
-            display: block;
-            width: 100vw;
-            position: absolute;
-            background: currentColor;
-            height: 1px;
-            content: "";
-            margin-left: 24px;
-            left: 100%;
-            top: 20px;
-        }
-    }
-    .advantages {
-        display: flex;
-        // max-width: 820px;
-        justify-content: center;
-        margin: 0 auto;
-        .advantage {
-            width: calc(100%/3);
-            padding: 0 24px 48px 24px;
-            text-align: center;
-            .advantage_label {
-                margin-bottom: 24px;
-                font-size: 22px;
-                font-weight: 400;
-            }
-            .advantage_description {
-                margin-bottom: 24px;
-                font-size: 16px;
-                color: rgb(94, 94, 94);
-                font-weight: 300;
-                line-height: 1.6;
+        nav {
+            padding: 24px 0;
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                max-width: 900px;
+                margin: 0 auto;
+                width: 95vw;
+                li {
+                    font-size: 14px;
+                    a {
+                        text-decoration: none;
+                        padding: 6px;
+                        color: rgb(94, 94, 94);
+                    }
+                    .page_link {
+                        color: rgb(153, 108, 83);
+                        font-weight: 700;
+                    }
+                }
             }
         }
+    }
+    .header_down {
+        height: 32px;
     }
 }
 
 footer {
-    background-color: rgb(246, 246, 246);
-    margin: 0 -2rem -2rem -2rem;
     padding: 32px 0;
+    background-color: rgb(246, 246, 246);
     .contact {
         text-align: center;
         padding-bottom: 32px;
@@ -208,3 +120,163 @@ footer {
         padding-top: 32px;
     }
 }
+
+/* HOME */
+
+.home_img_cover {
+.home_img {
+    background-image: url(./img/home_img.webp);
+    width: 100%;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+}
+
+#home_company {
+.company_summary {
+    padding: 56px 0;
+    max-width: calc(60%);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    .summary_title {
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 24px;
+        color: #1B1B1B;
+    }
+    .summary_description {
+        font-size: 18px;
+        color: rgb(94, 94, 94);
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+}
+}
+
+#home_advantage {
+.advantage_title {
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    margin-top: 56px;
+    span {
+        color: rgb(186, 138, 110);
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+    }
+    span:before {
+        display: block;
+        width: 100vw;
+        position: absolute;
+        background: currentColor;
+        height: 1px;
+        content: "";
+        margin-right: 24px;
+        right: 100%;
+        top: 20px;
+    }
+    span:after {
+        display: block;
+        width: 100vw;
+        position: absolute;
+        background: currentColor;
+        height: 1px;
+        content: "";
+        margin-left: 24px;
+        left: 100%;
+        top: 20px;
+    }
+}
+.advantages {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    .advantage {
+        width: calc(100%/3);
+        padding: 0 24px 48px 24px;
+        text-align: center;
+        .advantage_label {
+            margin-bottom: 24px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .advantage_description {
+            margin-bottom: 24px;
+            font-size: 16px;
+            color: rgb(94, 94, 94);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+    }
+}
+}
+
+/* HOME */
+
+/* CONTACT */
+
+#contact {
+    .contact_cover {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(//img1.wsimg.com/isteam/ip/b24f650a-c27b-415e-97f2-e562e281b56d/ASA-Final-Pattern-04.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2558,m);
+        background-size: auto, cover;
+        .contact_container {
+            padding: 56px 0;
+            width: 984px;
+            margin: 0 auto;
+            .contact_title {
+                margin-bottom: 56px;
+                text-align: center;
+                h2 {
+                    font-family: 'Playfair Display', Georgia, serif;
+                    font-size: 38px;
+                    color: rgb(255, 255, 255);
+                    font-weight: 400;
+                }
+            }
+            .contact_contents {
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                margin: 0 auto;
+                padding: 56px 24px;
+                max-width: 66%;
+                h4 {
+                    margin-bottom: 24px;
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: rgb(52, 52, 52);
+                }
+                .companyAddress {
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                    color: rgb(94, 94, 94);
+                    font-weight: 300;
+                }
+                .contact_list {
+                    margin-bottom: 24px;
+                    color: rgb(94, 94, 94);
+                    font-size: 16px;
+                    font-weight: 300;
+                    p {
+                        a {
+                            color: rgb(153, 108, 83);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* CONTACT */
+
+
