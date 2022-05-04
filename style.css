@@ -49,6 +49,63 @@ a {
   background-color: #d1ab95;
 }
 
+.section_title {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  margin-top: 56px;
+}
+
+.section_title span {
+  color: #ba8a6e;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+.section_title span:before {
+  display: block;
+  width: 100vw;
+  position: absolute;
+  background: currentColor;
+  height: 1px;
+  content: "";
+  margin-right: 24px;
+  right: 100%;
+  top: 20px;
+}
+
+.section_title span:after {
+  display: block;
+  width: 100vw;
+  position: absolute;
+  background: currentColor;
+  height: 1px;
+  content: "";
+  margin-left: 24px;
+  left: 100%;
+  top: 20px;
+}
+
+.label {
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.label_description {
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #5e5e5e;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 header .header_up {
   height: 32px;
 }
@@ -180,49 +237,6 @@ footer .copyRight {
   font-weight: 400;
 }
 
-#home_advantage .advantage_title {
-  width: 90%;
-  text-align: center;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 1100px;
-  margin-bottom: 40px;
-  margin-top: 56px;
-}
-
-#home_advantage .advantage_title span {
-  color: #ba8a6e;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 400;
-  position: relative;
-  display: inline-block;
-}
-
-#home_advantage .advantage_title span:before {
-  display: block;
-  width: 100vw;
-  position: absolute;
-  background: currentColor;
-  height: 1px;
-  content: "";
-  margin-right: 24px;
-  right: 100%;
-  top: 20px;
-}
-
-#home_advantage .advantage_title span:after {
-  display: block;
-  width: 100vw;
-  position: absolute;
-  background: currentColor;
-  height: 1px;
-  content: "";
-  margin-left: 24px;
-  left: 100%;
-  top: 20px;
-}
-
 #home_advantage .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,21 +253,84 @@ footer .copyRight {
   text-align: center;
 }
 
-#home_advantage .advantages .advantage .advantage_label {
-  margin-bottom: 24px;
+/* HOME */
+/* PROGRAM */
+/* PROGRAM */
+/* BOOK */
+#book_indiviual {
+  padding-bottom: 48px;
+}
+
+#book_indiviual .indiviual_container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#book_indiviual .indiviual_container .indiviual_left {
+  width: calc(100%/3);
+  padding-right: 24px;
+}
+
+#book_indiviual .indiviual_container .indiviual_left img {
+  width: 100%;
+}
+
+#book_indiviual .indiviual_container .indiviual_right {
+  width: calc((100%/3)*2);
+  padding-left: 24px;
+}
+
+#book_indiviual .indiviual_container .indiviual_right .book_type {
+  margin-bottom: 32px;
+}
+
+#book_business {
+  padding-bottom: 48px;
+}
+
+#book_business .business_container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#book_business .business_container .business_left {
+  width: 50%;
+  padding-right: 24px;
+}
+
+#book_business .business_container .business_left img {
+  width: 100%;
+}
+
+#book_business .business_container .business_right {
+  width: 50%;
+  padding-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#book_business .business_container .business_right .business_description {
+  text-align: center;
+}
+
+#book_business .business_container .business_right .business_description h4 {
   font-size: 22px;
   font-weight: 400;
-}
-
-#home_advantage .advantages .advantage .advantage_description {
   margin-bottom: 24px;
-  font-size: 16px;
-  color: #5e5e5e;
-  font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.25;
 }
 
-/* HOME */
+/* BOOK */
 /* CONTACT */
 #contact .contact_cover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url(//img1.wsimg.com/isteam/ip/b24f650a-c27b-415e-97f2-e562e281b56d/ASA-Final-Pattern-04.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2558,m);
