@@ -106,6 +106,10 @@ a {
   line-height: 1.6;
 }
 
+.center {
+  text-align: center;
+}
+
 header .header_up {
   height: 32px;
 }
@@ -162,6 +166,11 @@ header .header_container nav ul li:hover a {
 
 header .header_down {
   height: 32px;
+}
+
+.page_link {
+  color: #996c53;
+  font-weight: 700;
 }
 
 footer {
@@ -259,6 +268,26 @@ footer .copyRight {
 
 /* HOME */
 /* PROGRAM */
+#program_summary .program {
+  max-width: 90%;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+#program_pdf .download {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#program_pdf .download a {
+  text-align: center;
+  display: block;
+  color: #996c53;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /* PROGRAM */
 /* BOOK */
 #book_indiviual {
@@ -430,6 +459,86 @@ footer .copyRight {
 }
 
 /* ABOUT US */
+/* TESTIMONIALS */
+#review_video .video_list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#review_video .video_list .video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 48px;
+}
+
+#review_video .video_list .video .video_cover {
+  width: 48%;
+}
+
+#review_video .video_list .video .video_cover .youtube {
+  padding-bottom: 51.5%;
+  position: relative;
+}
+
+#review_video .video_list .video .video_cover .youtube iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 620px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#review_video .video_list .video .video_commemt {
+  width: 48%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#review_comemts .comemts_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92%;
+  margin: 0 auto 24px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#review_comemts .comemts_list .comemts_cover {
+  width: calc(100%/3);
+  margin-bottom: 36px;
+  padding: 0 24px;
+}
+
+#review_comemts .comemts_list .comemts_cover .student_pic {
+  width: 100%;
+}
+
+#review_comemts .comemts_list .comemts_cover .student_pic img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* TESTIMONIALS */
 /* BLOG */
 #blog .blog_description {
   font-size: 16px;
@@ -540,6 +649,95 @@ footer .copyRight {
 }
 
 /* BLOG */
+/* NEWSLETTER */
+#newsletter .news_contents {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#newsletter .news_contents .news_left {
+  width: 75%;
+  padding-right: 24px;
+}
+
+#newsletter .news_contents .news_left .news {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#newsletter .news_contents .news_left .news a .news_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_left {
+  margin-right: 32px;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_left img {
+  width: 200px;
+  max-height: 200px;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_right .news_info {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #595959;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_right .news_title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1b1b1b;
+  line-height: 1.125;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_right p {
+  font-size: 16px;
+  color: #5e5e5e;
+  margin-bottom: 12px;
+}
+
+#newsletter .news_contents .news_left .news a .news_card .news_card_right .continue {
+  color: #996c53;
+}
+
+#newsletter .news_contents .news_left .no_border {
+  border: none;
+}
+
+#newsletter .news_contents .news_right {
+  width: 25%;
+  border-left: 1px solid #e2e2e2;
+  padding: 0 24px;
+}
+
+#newsletter .news_contents .news_right h4 {
+  font-size: 22px;
+  color: #1b1b1b;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+#newsletter .news_contents .news_right ul {
+  list-style: none;
+}
+
+#newsletter .news_contents .news_right ul li {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+/* NEWSLETTER */
 /* CONTACT */
 #contact .contact_cover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url(//img1.wsimg.com/isteam/ip/b24f650a-c27b-415e-97f2-e562e281b56d/ASA-Final-Pattern-04.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2558,m);

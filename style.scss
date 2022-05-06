@@ -99,6 +99,10 @@ a {
     line-height: 1.6;
 }
 
+.center {
+    text-align: center;
+}
+
 header {
     .header_up {
         height: 32px;
@@ -131,7 +135,6 @@ header {
                         padding: 6px;
                         color: rgb(94, 94, 94);
                     }
-
                     .page_link {
                         color: rgb(153, 108, 83);
                         font-weight: 700;
@@ -148,6 +151,11 @@ header {
     .header_down {
         height: 32px;
     }
+}
+
+.page_link {
+    color: rgb(153, 108, 83);
+    font-weight: 700;
 }
 
 footer {
@@ -233,7 +241,28 @@ footer {
 
 /* PROGRAM */
 
+#program_summary {
+    .program {
+        max-width: 90%;
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}
 
+#program_pdf {
+    .download {
+        width: 90%;
+        margin: 0 auto;
+        a {
+            text-align: center;
+            display: block;
+            color: rgb(153, 108, 83);
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
 
 /* PROGRAM */
 
@@ -388,6 +417,68 @@ footer {
 
 /* ABOUT US */
 
+/* TESTIMONIALS */
+
+#review_video {
+    .video_list {
+        width: 90%;
+        margin: 0 auto;
+        .video {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 48px;
+            .video_cover {
+                width: 48%;
+                .youtube {
+                    padding-bottom: 51.5%;
+                    position: relative;
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        max-height: 620px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .video_commemt {
+                width: 48%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+#review_comemts {
+    .comemts_list {
+        display: flex;
+        width: 92%;
+        margin: 0 auto 24px auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .comemts_cover {
+            width: calc(100%/3);
+            margin-bottom: 36px;
+            padding: 0 24px;
+            .student_pic {
+                width: 100%;
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+/* TESTIMONIALS */
+
 /* BLOG */
 
 #blog {
@@ -472,6 +563,82 @@ footer {
 }
 
 /* BLOG */
+
+/* NEWSLETTER */
+
+#newsletter {
+    .news_contents {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        .news_left {
+            width: 75%;
+            padding-right: 24px;
+            .news {
+                padding-bottom: 40px;
+                margin-bottom: 40px;
+                border-bottom: 1px solid rgb(226, 226, 226);
+                a {
+                    .news_card {
+                        display: flex;
+                        flex-direction: row;
+                        .news_card_left {
+                            margin-right: 32px;
+                            img {
+                                width: 200px;
+                                max-height: 200px;
+                            }
+                        }
+                        .news_card_right {
+                            .news_info {
+                                font-size: 14px;
+                                margin-bottom: 12px;
+                                color: rgb(89, 89, 89);;
+                            }
+                            .news_title {
+                                font-size: 20px;
+                                margin-bottom: 12px;
+                                color: rgb(27, 27, 27);
+                                line-height: 1.125;
+                            }
+                            p {
+                                font-size: 16px;
+                                color: rgb(94, 94, 94);
+                                margin-bottom: 12px;
+                            }
+                            .continue {
+                                color: rgb(153, 108, 83);
+                            }
+                        }
+                    }
+                }
+            }
+            .no_border {
+                border: none;
+            }
+        }
+        .news_right {
+            width: 25%;
+            border-left: 1px solid rgb(226, 226, 226);
+            padding: 0 24px;
+            h4 {
+                font-size: 22px;
+                color: rgb(27, 27, 27);
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* NEWSLETTER */
 
 /* CONTACT */
 
