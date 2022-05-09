@@ -103,6 +103,11 @@ a {
     text-align: center;
 }
 
+.page_link {
+    color: rgb(153, 108, 83) !important;
+    font-weight: 700;
+}
+
 header {
     .header_up {
         height: 32px;
@@ -111,7 +116,7 @@ header {
         .home_logo {
             width: 375px;
             margin: 0 auto;
-            padding-top: 24px;
+            padding-top: 48px;
             a {
                 width: 100%;
                 img {
@@ -119,43 +124,58 @@ header {
                 }
             }
         }
-        nav {
-            padding: 24px 0;
-            ul {
-                list-style: none;
-                display: flex;
-                justify-content: space-between;
-                max-width: 900px;
-                margin: 0 auto;
-                width: 95vw;
-                li {
-                    font-size: 14px;
-                    a {
-                        text-decoration: none;
-                        padding: 6px;
-                        color: rgb(94, 94, 94);
-                    }
-                    .page_link {
-                        color: rgb(153, 108, 83);
-                        font-weight: 700;
-                    }
-                }
-                li:hover {
-                    a {
-                        color: rgb(153, 108, 83);
-                    }
-                }
+        .dropdwn{
+            max-width: 800px;
+            display: flex;
+            font-size: 14px;
+            margin-top: 36px;
+            margin-bottom: 48px;
+        }
+        
+        ul{
+            text-align: center;
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+        }
+        li{
+            position: relative;
+            display: block;
+            cursor: pointer;
+            color: rgb(94, 94, 94);
+        }
+        
+        .dropdwn li{
+            width: 800px;
+            display: inline;
+            a {
+                color: rgb(94, 94, 94);
             }
+        }
+        
+        .dropdwn_menu{
+            width: 100%;
+            display: none;
+            position: absolute;
+            padding: 0;
+        }
+        
+        .dropdwn_menu li{
+            width: 100%;
+        }
+        
+        .dropdwn_menu li a{
+            display: block;
+            color: rgb(94, 94, 94);
+        }
+        
+        li:hover, li a:hover{
+            color: rgb(153, 108, 83);
         }
     }
     .header_down {
         height: 32px;
     }
-}
-
-.page_link {
-    color: rgb(153, 108, 83);
-    font-weight: 700;
 }
 
 footer {
