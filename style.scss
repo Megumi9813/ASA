@@ -357,12 +357,36 @@ footer {
             width: calc(100%/3);
             margin-bottom: 36px;
             padding: 0 24px;
+            text-align: center;
             .member_pic {
                 width: 100%;
                 img {
                     width: 100%;
                     border-radius: 50%;
                 }
+            }
+            .teacher_name {
+                margin-top: 12px;
+                margin-bottom: 12px;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .teaser, .complete {
+                font-size: 16px;
+                color: rgb(94, 94, 94);
+                font-weight: 300;
+                line-height: 1.6;
+            }
+            .complete{
+                display:none;
+            }
+            .more{
+                color: rgb(153, 108, 83);
+                font-size: 16px;
+                font-weight: 400;
+                cursor:pointer;
+                text-align: center;
+                margin: 8px 0;
             }
         }
     }
@@ -431,9 +455,6 @@ footer {
     }
 }
 
-#subscribe {
-    
-}
 
 /* ABOUT US */
 
