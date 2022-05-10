@@ -229,6 +229,33 @@ footer .copyRight {
   padding-top: 32px;
 }
 
+.name_pic {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.teaser, .complete {
+  font-size: 16px;
+  color: #5e5e5e;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.complete {
+  display: none;
+}
+
+.more {
+  color: #996c53;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  margin: 8px 0;
+}
+
 /* HOME */
 .home_img_cover .home_img {
   background-image: url(./img/home_img.webp);
@@ -411,33 +438,6 @@ footer .copyRight {
   border-radius: 50%;
 }
 
-#team_intro .member_list .member_cover .teacher_name {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-#team_intro .member_list .member_cover .teaser, #team_intro .member_list .member_cover .complete {
-  font-size: 16px;
-  color: #5e5e5e;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-#team_intro .member_list .member_cover .complete {
-  display: none;
-}
-
-#team_intro .member_list .member_cover .more {
-  color: #996c53;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  text-align: center;
-  margin: 8px 0;
-}
-
 /* TEAM */
 /* ABOUT US */
 #aboutUs_summary .aboutUs_description {
@@ -572,6 +572,7 @@ footer .copyRight {
   width: calc(100%/3);
   margin-bottom: 36px;
   padding: 0 24px;
+  text-align: center;
 }
 
 #review_comemts .comemts_list .comemts_cover .student_pic {
@@ -785,9 +786,9 @@ footer .copyRight {
 /* NEWSLETTER */
 /* CONTACT */
 #contact .contact_cover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url(//img1.wsimg.com/isteam/ip/b24f650a-c27b-415e-97f2-e562e281b56d/ASA-Final-Pattern-04.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2558,m);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(//img1.wsimg.com/isteam/ip/b24f650a-c27b-415e-97f2-e562e281b56d/ASA-Final-Pattern-04.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2558,m);
   background-size: auto, cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url(./img/contact_back.webp);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(./img/contact_back.webp);
 }
 
 #contact .contact_cover .contact_container {
@@ -842,4 +843,6 @@ footer .copyRight {
 }
 
 /* CONTACT */
+/* media */
+/* media */
 /*# sourceMappingURL=style.css.map */
