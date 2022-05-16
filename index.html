@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/82cc084487.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <title>Academy of Scholastic Achievement</title>
@@ -33,17 +34,29 @@
                         </ul>
                     </li>
                     <li><a href="./testimonial.html">TESTIMONIALS</a></li>
-                    <li><a href="./blog.html">BLOG</a></li>
-                    <li><a href="./news.html">NEWSLETTER</a></li>
+                    <li>POSTS
+                        <ul class="dropdwn_menu">
+                            <li><a href="./blog.html">BLOG</a></li>
+                            <li><a href="./news.html">NEWSLETTER</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </div>
         <div class="header_down"></div>
     </header>
     <div class="home_img_cover">
-        <div class="home_img"></div>
+        <div class="home-img"></div>
+        <div class="home_img_cover-bg"></div>
+        <div class="home_img-description">
+            <h1 class="summary_title">English classes for the 21st century</h1>
+                <p class="summary_description">Providing English language training based on the most effective approaches to language acquisition in order to maximize performance on standardized tests such as SAT, TOEFL, Cambridge and IELTS.</p>
+                <div class="button_gold">
+                    <a href="">FIND OUT MORE</a>
+                </div>
+        </div>
     </div>
-    <section id="home_company">
+    <!-- <section id="home_company">
         <div class="row">
             <div class="company_summary">
                 <h1 class="summary_title">English classes for the 21st century</h1>
@@ -53,7 +66,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="home_advantage">
         <div class="row">
             <div class="section_title">
@@ -126,5 +139,7 @@
             });
         });
     </script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/asavancouver/diagnostic-interview?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=c49275', text: 'Book a Free Diagnostic Interview', color: '#c49275', textColor: '#ffffff', branding: true }); }</script>
 </body>
 </html>
