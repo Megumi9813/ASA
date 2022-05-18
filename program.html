@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/82cc084487.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/f50fc78627.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <title>Programs | Academy of Scholastic Achievement</title>
 </head>
@@ -42,6 +43,25 @@
                 </li>
                 <li><a href="./contact.html">CONTACT US</a></li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"><a href="./index.html"  onclick="closeMenu()">HOME</a></li>
+                    <li class="menu__list"><a href="#" onclick="closeMenu()"><b>Program</b></a></li>
+                    <li class="menu__list"><a href="./book.html" onclick="closeMenu()">Book a Class</a></li>
+                    <li class="menu__list"><a href="./team.html" onclick="closeMenu()">Who We Are</a></li>
+                    <li class="menu__list"><a href="./aboutUs.html" onclick="closeMenu()">FAQ</a></li>
+                    <li class="menu__list"><a href="./testimonial.html" onclick="closeMenu()">Testimonials</a></li>
+                    <li class="menu__list"><a href="./blog.html" onclick="closeMenu()">Blog</a></li>
+                    <li class="menu__list"><a href="./news.html" onclick="closeMenu()">Newsletter</a></li>
+                    <li class="menu__list"><a href="./contact.html" onclick="closeMenu()">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header_down brown"></div>
     </header>

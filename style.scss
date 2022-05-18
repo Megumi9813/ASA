@@ -125,7 +125,7 @@ header {
             }
         }
         .dropdwn{
-            max-width: 800px;
+            max-width: 750px;
             display: flex;
             font-size: 14px;
             margin-top: 36px;
@@ -306,7 +306,7 @@ footer {
 #program_summary {
     .program {
         max-width: 90%;
-        width: 600px;
+        width: 700px;
         margin: 0 auto;
         margin-bottom: 32px;
     }
@@ -579,7 +579,7 @@ footer {
         color: rgb(94, 94, 94);
         font-weight: 300;
         text-align: center;
-        width: 700px;
+        width: 60%;
         margin: -20px auto 40px auto;
         line-height: 1.5;
     }
@@ -740,7 +740,7 @@ footer {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(./img/contact_back.webp);
         .contact_container {
             padding: 56px 0;
-            width: 984px;
+            width: 80%;
             margin: 0 auto;
             .contact_title {
                 margin-bottom: 56px;
@@ -788,10 +788,209 @@ footer {
 
 /* CONTACT */
 
+/* Humburger button */
+.btn__menu {
+    display: none;
+    background-color: transparent;
+    font-size: 28px;
+    text-align: center;
+    border: none;
+    top: 50px;
+    left: 30px;
+    position: absolute;
+    i {
+        color: rgb(27, 27, 27);
+    }
+    i:hover {
+        color: rgb(153, 108, 83);
+    }
+}
+
+.btn__menu--close {
+    display: none;
+    background-color: transparent;
+    font-size: 28px;
+    text-align: center;
+    border: none;
+    top: 25px;
+    right: 30px;
+    position: absolute;
+    i {
+        color: rgb(27, 27, 27);
+    }
+    i:hover {
+        color: rgb(153, 108, 83);
+    }
+}
+
+.menu__backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu__open .menu__backdrop {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+header .header_container .menu__links {
+    width: 100%;
+    padding: 0 24px;
+    li {
+        text-align: left;
+        font-size: 22px;
+        padding: 12px 24px 12px 24px;
+        border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+        a {
+            color: rgb(27, 27, 27)
+        }
+    }
+}
+
+/* Humburger button */
+
 /* media */
 
 @media (max-width: 1024px) {
-    
+    #home_advantage .advantages .advantage {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .header_down, header .header_up{
+        display: none;
+    }
+    .btn__menu, .btn__menu--close{
+        display: block;
+    }
+    header .header_container .dropdwn {
+        display: none;
+    }
+    #home_advantage .advantages {
+        flex-wrap: wrap;
+        .advantage {
+            width: 100%;
+        }
+    }
+    .section_title span {
+        font-size: 24px;
+    }
+    #review_video .section_title span,
+    #book_business .section_title span,
+    #review_comemts .section_title span,
+    #faq .section_title span {
+        width: 250px;
+    }
+    #book_business .business_container {
+        flex-wrap: wrap;
+        .business_left {
+            width: 100%;
+            padding: 0;
+        }
+        .business_right {
+            width: 100%;
+            padding: 0;
+        }
+
+    }
+    #team_intro .member_list {
+        flex-wrap: wrap;
+        .member_cover {
+            width: 100%;
+        }
+    }
+    #review_video .video_list .video:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    #review_video .video_list .video {
+        flex-wrap: wrap;
+        padding: 0;
+        .video_cover {
+            width: 100%;
+        }
+        .video_commemt {
+            width: 100%;
+            .label {
+                margin-top: 24px;
+            }
+        }
+    }
+    #review_comemts .comemts_list {
+        flex-wrap: wrap;
+        .comemts_cover {
+            width: 100%;
+        }
+    }
+    #faq .faq_list {
+        max-width: 90%;
+    }
+    #about_connect .about_social {
+        width: 85%;
+    }
+    #contact .contact_cover .contact_container .contact_contents h4 {
+        font-size: 18px;
+    }
+    #blog .blog_description {
+        width: 90%;
+    }
+    #blog .blog_list .blog {
+        width: 100%;
+        a .card {
+            height: auto;
+        }
+    }
+    #newsletter .news_contents .news_right {
+        display: none;
+    }
+    #newsletter .news_contents .news_left {
+        padding: 0;
+        width: 100%;
+    }
+    #newsletter .news_contents .news_left .news a .news_card {
+        flex-wrap: wrap;
+        .news_card_left {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        .news_card_right {
+            width: 100%;
+        }
+    }
+    header .header_container {
+        min-height: 100px;
+        .home_logo {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 200px;
+            z-index: 100;
+            padding: 10px 10px 10px 10px;
+        }
+    }
+    .index_logo {
+        .home_logo {
+            background-color: #fff;
+            box-shadow: 1px 1px 3px #d6d4d4;
+        }
+    }
 }
 
 /* media */
