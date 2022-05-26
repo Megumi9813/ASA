@@ -15,10 +15,6 @@
     <header>
         <div class="header_up"></div>
             <div class="header_container index_logo">
-                <div class="search_window">
-                    <script async src="https://cse.google.com/cse.js?cx=6678a8c2982f0778a"></script>
-                    <div class="gcse-search"></div>
-                </div>
                 <div class="home_logo">
                     <a href="#">
                         <img src="./img/logo_ASA.webp" alt="">
@@ -29,7 +25,7 @@
                     <li>PROGRAMS
                         <ul class="dropdwn_menu">
                             <li><a href="./program.html">PROGRAM</a></li>
-                            <li><a href="./book.html">BOOK A CLASS</a></li>
+                            <li><a href="./book.html">FREE DIAGNOSTIC INTERVIEW</a></li>
                         </ul>
                     </li>
                     <li>ABOUT US
@@ -57,7 +53,7 @@
                     <ul class="menu__links">
                         <li class="menu__list"><a href="#" onclick="closeMenu()"><b>HOME</b></a></li>
                         <li class="menu__list"><a href="./program.html" onclick="closeMenu()">Program</a></li>
-                        <li class="menu__list"><a href="./book.html" onclick="closeMenu()">Book a Class</a></li>
+                        <li class="menu__list"><a href="./book.html" onclick="closeMenu()">Free Diagnostic Interview</a></li>
                         <li class="menu__list"><a href="./team.html" onclick="closeMenu()">Who We Are</a></li>
                         <li class="menu__list"><a href="./aboutUs.html" onclick="closeMenu()">FAQ</a></li>
                         <li class="menu__list"><a href="./testimonial.html" onclick="closeMenu()">Testimonials</a></li>
@@ -76,7 +72,7 @@
             <h1 class="summary_title">English classes for the 21st century</h1>
                 <p class="summary_description">Providing English language training based on the most effective approaches to language acquisition in order to maximize performance on standardized tests such as SAT, TOEFL, Cambridge and IELTS.</p>
                 <div class="button_gold">
-                    <a href="">FIND OUT MORE</a>
+                    <a href="./program.html">FIND OUT MORE</a>
                 </div>
         </div>
     </div>
@@ -88,17 +84,17 @@
             <div class="advantages">
                 <div class="advantage">
                     <h4 class="label">Personalized Approach</h4>
-                    <p class="label_description">What sets ASA apart is our needs-based, diagnostic-prognostic approach. We invite all prospective students to register for a <a href="" class="gold">free assessment</a> where after a comprehensive grammar, reading and writing exam, students are provided with a range of options on how to achieve their desired goal. Students may very well only need a few English classes or may benefit from our long-term coaching program.</p>
+                    <p class="label_description">What sets ASA apart is our needs-based, diagnostic-prognostic approach. We invite all prospective students to register for a <a href="./book.html" class="gold">free assessment</a> where after a comprehensive grammar, reading and writing exam, students are provided with a range of options on how to achieve their desired goal. Students may very well only need a few English classes or may benefit from our long-term coaching program.</p>
                     <div class="button_gold">
-                        <a href="">BOOK NOW</a>
+                        <a href="./book.html">BOOK NOW</a>
                     </div>
                 </div>
                 <div class="advantage">
                     <h4 class="label">Who We Are</h4>
-                    <p class="label_description">A <a href="" class="gold">professional team</a> of teachers of ESL/EFL that believes in utilizing literature and other authentic material in an analytical manner to enable students to accelerate their language acquisition,  develop academic skills, and excel in standardized exams.</p>
+                    <p class="label_description">A <a href="./team.html" class="gold">professional team</a> of teachers of ESL/EFL that believes in utilizing literature and other authentic material in an analytical manner to enable students to accelerate their language acquisition,  develop academic skills, and excel in standardized exams.</p>
                     <p class="label_description">No gimmicks, no tricks, just results.</p>
                     <div class="button_gold">
-                        <a href="">TEAM</a>
+                        <a href="./team.html">TEAM</a>
                     </div>
                 </div>
             </div>
@@ -143,11 +139,11 @@
     </footer>
     <script type="text/javascript">
         $(function(){
-            $('.dropdwn li').hover(function(){
+            $('.dropdwn li').click(function(){
                 $(this).siblings().find("ul").hide();
                 $("ul:not(:animated)", this).slideDown();
             });
-            $('html').click(function() {
+            $('html').click.click(function() {
                 $("ul.dropdwn_menu",this).slideUp();
             });
         });

@@ -26,7 +26,7 @@
                 <li>PROGRAMS
                     <ul class="dropdwn_menu">
                         <li><a href="./program.html">PROGRAM</a></li>
-                        <li><a href="./book.html">BOOK A CLASS</a></li>
+                        <li><a href="./book.html">FREE DIAGNOSTIC INTERVIEW</a></li>
                     </ul>
                 </li>
                 <li><div class="page_link">ABOUT US</div> 
@@ -54,7 +54,7 @@
                 <ul class="menu__links">
                     <li class="menu__list"><a href="./index.html"  onclick="closeMenu()">HOME</a></li>
                     <li class="menu__list"><a href="./program.html" onclick="closeMenu()">Program</a></li>
-                    <li class="menu__list"><a href="./book.html" onclick="closeMenu()">Book a Class</a></li>
+                    <li class="menu__list"><a href="./book.html" onclick="closeMenu()">Free Diagnostic Interview</a></li>
                     <li class="menu__list"><a href="#" onclick="closeMenu()"><b>Who We Are</b></a></li>
                     <li class="menu__list"><a href="./aboutUs.html" onclick="closeMenu()">FAQ</a></li>
                     <li class="menu__list"><a href="./testimonial.html" onclick="closeMenu()">Testimonials</a></li>
@@ -198,11 +198,11 @@
     </footer>
     <script type="text/javascript">
         $(function(){
-            $('.dropdwn li').hover(function(){
+            $('.dropdwn li').click(function(){
                 $(this).siblings().find("ul").hide();
                 $("ul:not(:animated)", this).slideDown();
             });
-            $('html').click(function() {
+            $('html').click.click(function() {
                 $("ul.dropdwn_menu",this).slideUp();
             });
         });
